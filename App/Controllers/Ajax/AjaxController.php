@@ -24,23 +24,24 @@ class AjaxController extends Controller
         if (!$ajax->validate())
         {
             $error= "Failed to join, please check you pass/email";
+            session_start();
+            $_SESSION['email']=$email;
         }
         if(isset($error))
         {
             $data = array(
                 "title"         => "AjaxControlFail",
-                'errorMessage'  => $error,
+                'message'  => $error,
                 'error'         => false,
-                //'homePageUrl'   => $baseUrl['http://localhost/home'],
+//                'homePageUrl'   => $baseUrl['http://localhost/home'],
             );
             echo json_encode($data);
         }else {
             $data = array(
                 "title"         => "AjaxConSucc",
-                'succ'          => "Hello, $email",
+                'message'          => "Hello, $email",
                 'error'         => true,
-                'success'       => true,
-                //'homePageUrl'   => $baseUrl['http://localhost/home']
+//                'homePageUrl'   => $baseUrl['http://localhost/home']
             );
             echo json_encode($data);
         }

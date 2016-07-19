@@ -1331,3 +1331,153 @@ Stack trace:
 #10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
 #11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
 #12 {main}
+ERROR - 2016-07-19 12:26:21 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:26:22 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:26:53 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:26:53 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:27:02 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:27:02 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:27:11 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:27:11 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:27:14 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 12:27:16 - exception 'ErrorException' with message 'Undefined index: http://localhost/home' in C:\wamp64\www\App\Controllers\Ajax\AjaxController.php:45
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Ajax\AjaxController.php(45): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp64\\www\\A...', 45, Array)
+#1 [internal function]: AjaxController->ajaxLogin()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___ajaxLogin', Array)
+#4 [internal function]: AjaxController::___ajaxLogin()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('AjaxController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}

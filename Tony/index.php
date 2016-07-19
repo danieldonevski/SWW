@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['name']='Tony';
+    $_SESSION['name']='tony';
 
 //echo $_SESSION['ID'];
 /**

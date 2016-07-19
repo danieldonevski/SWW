@@ -6,7 +6,8 @@ $("#loginForm").submit(function(e){
         data: $("#loginForm").serialize(),
         dataType: "json",
         success: function (data){
-            alert(data.error);
+            alert(data.message);
+            //window.location.href = "/home";
         }
     });
     e.preventDefault();

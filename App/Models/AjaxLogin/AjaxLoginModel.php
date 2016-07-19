@@ -17,8 +17,8 @@ class AjaxLoginModel
     }
     public function Ajax_emailexist()
     {
-        $app=   $this->ajxapp;
-        $app->  db['default']->where("email",$this->email);
+        $app = $this->ajxapp;
+        $app-> db['default']->where("email",$this->email);
         $result=$app->db['default']->getOne('users');
         if($result === NULL)
         {

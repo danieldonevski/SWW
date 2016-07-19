@@ -74,19 +74,19 @@
 </footer>
 </div>
 <script src="https://www.youtube.com/iframe_api"></script>
-<script src="/css//js/jquery.min.js"></script>
-<script src="/css//js/jquery.plugin.min.js"></script>
-<script src="/css//js/bootstrap.min.js"></script>
-<script src="/css//js/jquery.flexslider-min.js"></script>
-<script src="/css//js/smooth-scroll.min.js"></script>
-<script src="/css//js/skrollr.min.js"></script>
-<script src="/css//js/spectragram.min.js"></script>
-<script src="/css//js/scrollReveal.min.js"></script>
-<script src="/css//js/isotope.min.js"></script>
-<script src="/css//js/twitterFetcher_v10_min.js"></script>
-<script src="/css//js/lightbox.min.js"></script>
-<script src="/css//js/jquery.countdown.min.js"></script>
-<script src="/css//js/scripts.js"></script>
+<script src="/css/js/jquery.min.js"></script>
+<script src="/css/js/jquery.plugin.min.js"></script>
+<script src="/css/js/bootstrap.min.js"></script>
+<script src="/css/js/jquery.flexslider-min.js"></script>
+<script src="/css/js/smooth-scroll.min.js"></script>
+<script src="/css/js/skrollr.min.js"></script>
+<script src="/css/js/spectragram.min.js"></script>
+<script src="/css/js/scrollReveal.min.js"></script>
+<script src="/css/js/isotope.min.js"></script>
+<script src="/css/js/twitterFetcher_v10_min.js"></script>
+<script src="/css/js/lightbox.min.js"></script>
+<script src="/css/js/jquery.countdown.min.js"></script>
+<script src="/css/js/scripts.js"></script>
 {% for js in javascript %}
 <script src="{{js}}"></script>
 {% endfor %}

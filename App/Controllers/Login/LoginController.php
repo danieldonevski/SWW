@@ -15,32 +15,13 @@ class LoginController extends Controller
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
 
-//        $data = array("title" => "Login",$javascript);
-        $data = array("title" => "Login");
+        $javascript = array(
+            "/css/js/login.js");
+
+        $data = array("title" => "Login", "javascript" => $javascript);
 
         $app->render('pages/login.tpl', $data);
     }
-    /**
-     * @Route('/login2')
-     * @Name('post.index')
-     * @Method('post')
-     */
-    public function postAction( )
-    {
-
-
-        /** @var Yee\Yee $yee */
-        $app = $this->getYee();
-
-//        $email = $app->request()->post("loginEmail");
-//        $password = $app->request()->post("loginPassword");
-
-
-        $data = array("title"=>"Login");
-
-            $app->render('pages/login.tpl', $data );
-    }
-
 }
 /**
  * Created by PhpStorm.

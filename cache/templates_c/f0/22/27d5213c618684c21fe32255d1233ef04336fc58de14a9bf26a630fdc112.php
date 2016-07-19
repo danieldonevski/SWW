@@ -31,7 +31,7 @@ class __TwigTemplate_f02227d5213c618684c21fe32255d1233ef04336fc58de14a9bf26a630f
                 <div class=\"col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center\">
                     <h1 class=\"text-white\">Login to continue</h1>
                     <div class=\"photo-form-wrapper clearfix\">
-                        <form id=\"loginForm\" action=\"\" method=\"post\">
+                        <form id=\"loginForm\">
                             <input id=\"email\" name=\"loginEmail\" class=\"form-email\" type=\"text\" placeholder=\"Email Address\" value=\"email@gmail.com\">
                             <div style=\"display: none\" id=\"error-email\" class=\"alert alert-danger\" role=\"alert\"></div>
                             <input id=\"password\" name=\"loginPassword\"class=\"form-password\" type=\"password\" placeholder=\"Password\" value=\"asdAsd6\">

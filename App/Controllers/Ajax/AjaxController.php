@@ -9,6 +9,7 @@ class AjaxController extends Controller
     /**
      * @Route('/ajaxlogin')
      * @Name('ajaxlogin.index')
+     * @Method('post')
      */
     public function loginAction()
     {

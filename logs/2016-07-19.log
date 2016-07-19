@@ -1226,3 +1226,108 @@ Stack trace:
 #17 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
 #18 C:\wamp64\www\index.php(48): Yee\Yee->execute()
 #19 {main}
+ERROR - 2016-07-19 09:52:10 - exception 'ErrorException' with message 'Array to string conversion' in C:\wamp64\www\App\Controllers\Home\HomeController.php:35
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Home\HomeController.php(35): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\wamp64\\www\\A...', 35, Array)
+#1 [internal function]: HomeController->indexAction()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: HomeController::___indexAction()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('HomeController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 09:52:46 - exception 'ErrorException' with message 'Array to string conversion' in C:\wamp64\www\App\Controllers\Home\HomeController.php:30
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Home\HomeController.php(30): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\wamp64\\www\\A...', 30, Array)
+#1 [internal function]: HomeController->indexAction()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: HomeController::___indexAction()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('HomeController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 09:52:48 - exception 'ErrorException' with message 'Array to string conversion' in C:\wamp64\www\App\Controllers\Home\HomeController.php:30
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Home\HomeController.php(30): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\wamp64\\www\\A...', 30, Array)
+#1 [internal function]: HomeController->indexAction()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: HomeController::___indexAction()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('HomeController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 09:52:48 - exception 'ErrorException' with message 'Array to string conversion' in C:\wamp64\www\App\Controllers\Home\HomeController.php:30
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Home\HomeController.php(30): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\wamp64\\www\\A...', 30, Array)
+#1 [internal function]: HomeController->indexAction()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: HomeController::___indexAction()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('HomeController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 09:52:48 - exception 'ErrorException' with message 'Array to string conversion' in C:\wamp64\www\App\Controllers\Home\HomeController.php:30
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Home\HomeController.php(30): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\wamp64\\www\\A...', 30, Array)
+#1 [internal function]: HomeController->indexAction()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: HomeController::___indexAction()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('HomeController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 09:52:52 - exception 'ErrorException' with message 'Array to string conversion' in C:\wamp64\www\App\Controllers\Home\HomeController.php:30
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Home\HomeController.php(30): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\wamp64\\www\\A...', 30, Array)
+#1 [internal function]: HomeController->indexAction()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: HomeController::___indexAction()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('HomeController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-19 10:00:57 - exception 'ErrorException' with message 'Array to string conversion' in C:\wamp64\www\App\Controllers\Home\HomeController.php:30
+Stack trace:
+#0 C:\wamp64\www\App\Controllers\Home\HomeController.php(30): Yee\Yee::handleErrors(8, 'Array to string...', 'C:\\wamp64\\www\\A...', 30, Array)
+#1 [internal function]: HomeController->indexAction()
+#2 C:\wamp64\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#4 [internal function]: HomeController::___indexAction()
+#5 C:\wamp64\www\Yee\Route.php(462): call_user_func_array('HomeController:...', Array)
+#6 C:\wamp64\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp64\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp64\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp64\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp64\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp64\www\index.php(48): Yee\Yee->execute()
+#12 {main}

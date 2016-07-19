@@ -14,7 +14,11 @@ class LoginController extends Controller
     {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
-
+    //        session_cache_limiter(false);
+    //        session_start();
+//        if(isset($_SESSION['ID'])==true){
+//            echo $_SESSION['ID'];
+//        }
         $javascript = array(
             "/css/js/login.js");
 

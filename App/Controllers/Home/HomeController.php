@@ -13,10 +13,18 @@ class HomeController extends Controller
     {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
-        $name = "Daniel";
-//        echo md5("test@test.com") . "<br>";
-//        echo sha1("test@test.com");
-//        die;
+//        $app->add(new \Yee\Middleware\SessionCookie(array(
+//            'expires' => '20 minutes',
+//            'path' => '/',
+//            'domain' => null,
+//            'secure' => false,
+//            'httponly' => false,
+//            'name' => 'yee_session',
+//            'secret' => 'CHANGE_ME',
+//            'cipher' => MCRYPT_RIJNDAEL_256,
+//            'cipher_mode' => MCRYPT_MODE_CBC
+//        )));
+//        echo $_SESSION;
 
         $data = array("title" => "Home");
 

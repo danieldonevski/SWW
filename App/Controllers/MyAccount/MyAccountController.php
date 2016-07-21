@@ -15,9 +15,8 @@ class MyAccountController extends Controller
 
         if(isset($_SESSION['isLogged']) && $_SESSION['isLogged'] == true){
 
-                $javascript = array(
-
-            );
+            $javascript = array(
+                "/css/js/login.js");
 
             $data = array(
                 'title' => 'My Account',

@@ -67,13 +67,25 @@ class AjaxController extends Controller
         $model = new MyAccountModel($email, $firstName, $lastName, $password, $repeatPassword);
 
         if (!$model->validate()) {
-            $model->updateDetails();
-            $app->redirect("/home");
+            $error = "Failed to join, please check you pass/email";
         }
-
-        else{
-            $app->redirect("/myAccount");
-            echo "fail";
+        if (isset($error)) {
+            $data = array(
+                "title" => "AjaxControlFail",
+                'message' => $error,
+                'error' => false,
+//                'homePageUrl'   => $baseUrl['http://localhost/home'],
+            );
+            echo json_encode($data);
+        } else {
+            $model->updateDetails();
+            $data = array(
+                "title" => "AjaxConSucc",
+                'message' => "Hello, $email",
+                'error' => true,
+//                'homePageUrl'   => $baseUrl['http://localhost/home']
+            );
+            echo json_encode($data);
         }
     }
 }

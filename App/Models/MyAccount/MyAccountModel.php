@@ -23,46 +23,51 @@ class MyAccountModel
         $this->lastName = $lastName;
     }
 
-    public function validateNames($firstName,$lastName){
+    public function validateFirstName($firstName){
 
-        if(($firstName != null && $lastName != null) && ($firstName != "" && $lastName != "")){
+        if(($firstName != null ) && ($firstName != "" )){
             return true;
         }
         else{
             return false;
         }
+    }
+    public function validateLastName($lastName){
 
+        if(($lastName != null ) && ($lastName != "" )){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
     public function validatePass($password,$repeatPassword)
     {
         $pass = trim($password);
         $repeatPassword = trim($repeatPassword);
-        if(empty($pass) || empty($repeatPassword))
+
+        if ((strlen($pass) >= 6 && strlen($pass) <= 20))
         {
-            return true;
-        }
-        else{
-            if ((strlen($pass) >= 6 && strlen($pass) <= 20))
+            if (preg_match("#[0-9]+#", $pass) && preg_match("#[A-Z]+#", $pass) && preg_match("#[a-z]+#", $pass))
             {
-                if (preg_match("#[0-9]+#", $pass) && preg_match("#[A-Z]+#", $pass) && preg_match("#[a-z]+#", $pass))
+                if ($pass == $repeatPassword)
                 {
-                    if ($pass == $repeatPassword)
-                    {
-                        return true;
-                    }
+                    return true;
                 }
+                else {return false;}
             }
-            else
-            {
-                return false;
-            }
+            else {return false;}
+        }
+        else
+        {
+            return false;
         }
     }
     public function validatePassIsEmpty($password,$repeatPassword)
     {
         $pass = trim($password);
         $repeatPassword = trim($repeatPassword);
-        if(empty($pass) || empty($repeatPassword))
+        if(empty($pass) && empty($repeatPassword))
         {
           return true;
         }
@@ -73,36 +78,94 @@ class MyAccountModel
     }
     public function validate()
     {
-        if(!$this->validateNames($this->firstName,$this->lastName))
-        {
+        if($this->validateFirstName($this->firstName)
+            && $this->validateLastName($this->lastName)
+            && $this->validatePass($this->password,$this->repeatPassword)) {
+            return true;
+        }
+        else if($this->validateFirstName($this->firstName)
+            && $this->validateLastName($this->lastName)
+            && $this->validatePassIsEmpty($this->password,$this->repeatPassword)){
+            return true;
+        }
+        else if($this->validateFirstName($this->firstName)
+            && $this->validatePassIsEmpty($this->password,$this->repeatPassword)){
+            return true;
+        }
+        else if($this->validateLastName($this->lastName)
+            && $this->validatePassIsEmpty($this->password,$this->repeatPassword)){
+            return true;
+        }
+        else if($this->validateFirstName($this->firstName)
+            && $this->validatePass($this->password,$this->repeatPassword)){
+            return true;
+        }
+        else if($this->validateLastName($this->lastName)
+            && $this->validatePass($this->password,$this->repeatPassword)){
+            return true;
+        }
+        else if($this->validatePass($this->password,$this->repeatPassword)) {
+            return true;
+        }
+        else {
             return false;
         }
-        else if($this->validatePass($this->password,$this->repeatPassword))
-        {
-            return false;
-        }
-        return true;
     }
     public function updateDetails()
     {
         $app = \Yee\Yee::getInstance();
-        if($this->validatePassIsEmpty($this->password,$this->repeatPassword)){
-            $app->db['default']->where('email',$this->email)->update('users',
-                array(
-                    "firstName"=>$this->firstName,
-                    "lastName"=>$this->lastName
-                )
+        $data = array();
+       if($this->validateFirstName($this->firstName)
+           && $this->validateLastName($this->lastName)
+           && $this->validatePass($this->password,$this->repeatPassword))
+       {
+           $data = array(
+               "firstName"=>$this->firstName,
+               "lastName"=>$this->lastName,
+               "password"=>$this->password
+           );
+       }
+        if($this->validateFirstName($this->firstName)
+            && $this->validateLastName($this->lastName)
+            && $this->validatePassIsEmpty($this->password,$this->repeatPassword))
+        {
+            $data = array(
+                "firstName"=>$this->firstName,
+                "lastName"=>$this->lastName,
             );
         }
-        else {
-            $app->db['default']->where('email', $this->email)->update('users',
-                array(
-                    "password" => $this->password,
-                    "firstName" => $this->firstName,
-                    "lastName" => $this->lastName
-                )
+        if($this->validateFirstName($this->firstName)
+            && $this->validatePassIsEmpty($this->password,$this->repeatPassword)){
+            $data = array(
+                "firstName"=>$this->firstName,
             );
         }
+        if($this->validateLastName($this->lastName)
+            && $this->validatePassIsEmpty($this->password,$this->repeatPassword)){
+            $data = array(
+                "lastName"=>$this->lastName
+            );
+        }
+        if($this->validateFirstName($this->firstName)
+            && $this->validatePass($this->password,$this->repeatPassword)){
+            $data = array(
+                "firstName"=>$this->firstName,
+                "password"=>$this->password
+            );
+        }
+        if($this->validateLastName($this->lastName)
+            && $this->validatePass($this->password,$this->repeatPassword)){
+            $data = array(
+                "lastName"=>$this->lastName,
+                "password"=>$this->password
+            );
+        }
+        if($this->validatePass($this->password,$this->repeatPassword)) {
+            $data = array(
+                "password"=>$this->password
+            );
+        }
+        $app->db['default']->where('email', $this->email)->update('users',$data);
     }
 }
 /**

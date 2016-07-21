@@ -62,18 +62,16 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
                     <div class=\"col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center\">
                         <div class=\"photo-form-wrapper clearfix\">
                             <form id=\"myAccForm\">
-                                <!--<input id=\"email\" name=\"email\" class=\"form-email\" type=\"text\" disabled value=\"\">-->
                                 <input id=\"email\" name=\"email\" class=\"form-email\" type=\"text\" value=\"";
-        // line 44
+        // line 43
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["session"]) ? $context["session"] : null), "email"), "html", null, true);
         echo "\" disabled>
-
                                 <input id=\"editFirstName\" name=\"editFirstName\" class=\"form-editFirstName\" type=\"text\" placeholder=\"First Name\">
                                 <input id=\"editLastName\" name=\"editLastName\" class=\"form-editLastName\" type=\"text\" placeholder=\"Last Name\">
-                                <input id=\"editPassword\" name=\"editPassword\" class=\"form-editPassword\" type=\"text\" placeholder=\"Password\">
-                                <input id=\"editrepeatPassword\" name=\"editRepeatPassword\" class=\"form-repeatPassword\" type=\"text\" placeholder=\"Repeat Password\">
-                                <div style=\"display: none\" id=\"error-password\" class=\"alert alert-danger\" role=\"alert\"></div>
+                                <input id=\"editPassword\" name=\"editPassword\" class=\"form-editPassword\" type=\"password\" placeholder=\"Password\">
+                                <input id=\"editrepeatPassword\" name=\"editRepeatPassword\" class=\"form-repeatPassword\" type=\"password\" placeholder=\"Repeat Password\">
                                 <div style=\"display: none\" id=\"success\" class=\"alert alert-success\" role=\"alert\"></div>
+                                <div style=\"display: none\" id=\"error-password\" class=\"alert alert-danger\" role=\"alert\"></div>
                                 <input class=\"login-btn btn-filled\" type=\"submit\" value=\"Edit\">
                              </form>
                         <div/>
@@ -84,7 +82,7 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
 </div>
 
 ";
-        // line 61
+        // line 59
         $this->env->loadTemplate("./common/footer.tpl")->display($context);
     }
 
@@ -100,6 +98,6 @@ class __TwigTemplate_dc35536f4ec51135399b8d24f48520ecd8d9303dbbf278aaefe47e84765
 
     public function getDebugInfo()
     {
-        return array (  88 => 61,  68 => 44,  32 => 11,  21 => 2,  19 => 1,);
+        return array (  86 => 59,  67 => 43,  32 => 11,  21 => 2,  19 => 1,);
     }
 }

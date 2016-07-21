@@ -125,7 +125,7 @@ class MyAccountModel
                "password"=>$this->password
            );
        }
-        if($this->validateFirstName($this->firstName)
+        else if($this->validateFirstName($this->firstName)
             && $this->validateLastName($this->lastName)
             && $this->validatePassIsEmpty($this->password,$this->repeatPassword))
         {
@@ -134,33 +134,33 @@ class MyAccountModel
                 "lastName"=>$this->lastName,
             );
         }
-        if($this->validateFirstName($this->firstName)
+        else if($this->validateFirstName($this->firstName)
             && $this->validatePassIsEmpty($this->password,$this->repeatPassword)){
             $data = array(
                 "firstName"=>$this->firstName,
             );
         }
-        if($this->validateLastName($this->lastName)
+        else if($this->validateLastName($this->lastName)
             && $this->validatePassIsEmpty($this->password,$this->repeatPassword)){
             $data = array(
                 "lastName"=>$this->lastName
             );
         }
-        if($this->validateFirstName($this->firstName)
+        else if($this->validateFirstName($this->firstName)
             && $this->validatePass($this->password,$this->repeatPassword)){
             $data = array(
                 "firstName"=>$this->firstName,
                 "password"=>$this->password
             );
         }
-        if($this->validateLastName($this->lastName)
+        else if($this->validateLastName($this->lastName)
             && $this->validatePass($this->password,$this->repeatPassword)){
             $data = array(
                 "lastName"=>$this->lastName,
                 "password"=>$this->password
             );
         }
-        if($this->validatePass($this->password,$this->repeatPassword)) {
+        else if($this->validatePass($this->password,$this->repeatPassword)) {
             $data = array(
                 "password"=>$this->password
             );

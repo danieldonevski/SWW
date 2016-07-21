@@ -21,9 +21,9 @@
     <link rel="stylesheet" type="text/css" href="/css/ie9.css" />
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-    <script src="/css//js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="/css/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Roboto:300italic,400,300,700" rel="stylesheet" type="text/css">
-    <link href="/css//css/font-roboto.css" rel="stylesheet" type="text/css">
+    <link href="/css/css/font-roboto.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -45,8 +45,13 @@
                         <span class="alt-font"><i class="icon icon_mail"></i> hello@pivot.net</span>
 
                         <div class="pull-right">
-                            <a href="login" class="btn btn-primary btn-white btn-xs">Login</a>
-                            <a href="signup" class="btn btn-primary btn-filled btn-xs">Signup</a>
+                            {% if session.isLogged == false %}
+                            <a href="/login" class="btn btn-primary btn-white btn-xs">Login</a>
+                            <a href="/signup" class="btn btn-primary btn-filled btn-xs">Signup</a>
+                            {% else %}
+                            <a href="/myAccount" class="btn btn-primary btn-white btn-xs">Profile</a>
+                            <a href="/logout" class="btn btn-primary btn-filled btn-xs">Logout</a>
+                            {% endif %}
                             <a href="#" class="language"><img alt="English" src="/css/img/english.png"></a>
                             <a href="#" class="language"><img alt="English" src="/css/img/denmark.png"></a>
                         </div>
@@ -66,10 +71,17 @@
                         <li><a href="home">Home</a></li>
                         <li class="has-dropdown"><a href="#">Dropdown</a>
                             <ul class="subnav">
+                                {% if session.isLogged == false %}
                                 <li><a href="#">Example</a></li>
                                 <li><a href="#">Example</a></li>
                                 <li><a href="#">Example</a></li>
                                 <li><a href="#">Example</a></li>
+                                {% else %}
+                                <li><a href="#">Logged Example</a></li>
+                                <li><a href="#">Logged Example</a></li>
+                                <li><a href="#">Logged Example</a></li>
+                                <li><a href="#">Logged Example</a></li>
+                                {% endif %}
                             </ul>
                         </li>
                         <li class="has-dropdown"><a href="#">Half Width</a>

@@ -42,9 +42,9 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
     <link rel=\"stylesheet\" type=\"text/css\" href=\"/css/ie9.css\" />
     <![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700%7CRaleway:700' rel='stylesheet' type='text/css'>
-    <script src=\"/css//js/modernizr-2.6.2-respond-1.1.0.min.js\"></script>
+    <script src=\"/css/js/modernizr-2.6.2-respond-1.1.0.min.js\"></script>
     <link href=\"http://fonts.googleapis.com/css?family=Roboto:300italic,400,300,700\" rel=\"stylesheet\" type=\"text/css\">
-    <link href=\"/css//css/font-roboto.css\" rel=\"stylesheet\" type=\"text/css\">
+    <link href=\"/css/css/font-roboto.css\" rel=\"stylesheet\" type=\"text/css\">
 </head>
 
 <body>
@@ -66,9 +66,21 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
                         <span class=\"alt-font\"><i class=\"icon icon_mail\"></i> hello@pivot.net</span>
 
                         <div class=\"pull-right\">
-                            <a href=\"login\" class=\"btn btn-primary btn-white btn-xs\">Login</a>
-                            <a href=\"signup\" class=\"btn btn-primary btn-filled btn-xs\">Signup</a>
-                            <a href=\"#\" class=\"language\"><img alt=\"English\" src=\"/css/img/english.png\"></a>
+                            ";
+        // line 48
+        if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged") == false)) {
+            // line 49
+            echo "                            <a href=\"/login\" class=\"btn btn-primary btn-white btn-xs\">Login</a>
+                            <a href=\"/signup\" class=\"btn btn-primary btn-filled btn-xs\">Signup</a>
+                            ";
+        } else {
+            // line 52
+            echo "                            <a href=\"/myAccount\" class=\"btn btn-primary btn-white btn-xs\">Profile</a>
+                            <a href=\"/logout\" class=\"btn btn-primary btn-filled btn-xs\">Logout</a>
+                            ";
+        }
+        // line 55
+        echo "                            <a href=\"#\" class=\"language\"><img alt=\"English\" src=\"/css/img/english.png\"></a>
                             <a href=\"#\" class=\"language\"><img alt=\"English\" src=\"/css/img/denmark.png\"></a>
                         </div>
                     </div>
@@ -87,11 +99,25 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
                         <li><a href=\"home\">Home</a></li>
                         <li class=\"has-dropdown\"><a href=\"#\">Dropdown</a>
                             <ul class=\"subnav\">
+                                ";
+        // line 74
+        if (($this->getAttribute((isset($context["session"]) ? $context["session"] : null), "isLogged") == false)) {
+            // line 75
+            echo "                                <li><a href=\"#\">Example</a></li>
                                 <li><a href=\"#\">Example</a></li>
                                 <li><a href=\"#\">Example</a></li>
                                 <li><a href=\"#\">Example</a></li>
-                                <li><a href=\"#\">Example</a></li>
-                            </ul>
+                                ";
+        } else {
+            // line 80
+            echo "                                <li><a href=\"#\">Logged Example</a></li>
+                                <li><a href=\"#\">Logged Example</a></li>
+                                <li><a href=\"#\">Logged Example</a></li>
+                                <li><a href=\"#\">Logged Example</a></li>
+                                ";
+        }
+        // line 85
+        echo "                            </ul>
                         </li>
                         <li class=\"has-dropdown\"><a href=\"#\">Half Width</a>
                             <div class=\"subnav subnav-halfwidth\">
@@ -205,6 +231,6 @@ class __TwigTemplate_28dd9030a9625e9a4f57c3ad8eb7f0d0dd40ebd4693d66ae3d82e1ff9c0
 
     public function getDebugInfo()
     {
-        return array (  29 => 9,  85 => 56,  83 => 55,  37 => 14,  25 => 4,  23 => 3,  19 => 1,);
+        return array (  120 => 85,  113 => 80,  106 => 75,  104 => 74,  83 => 55,  78 => 52,  73 => 49,  71 => 48,  29 => 9,  19 => 1,);
     }
 }

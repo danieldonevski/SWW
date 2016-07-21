@@ -14,17 +14,19 @@ class LoginController extends Controller
     {
         /** @var Yee\Yee $yee */
         $app = $this->getYee();
-    //        session_cache_limiter(false);
-    //        session_start();
-//        if(isset($_SESSION['ID'])==true){
-//            echo $_SESSION['ID'];
-//        }
-        $javascript = array(
-            "/css/js/login.js");
+        if(!isset($_SESSION['isLogged'])){
+            $javascript = array(
+                "/css/js/login.js");
 
-        $data = array("title" => "Login", "javascript" => $javascript);
+            $data = array("title" => "Login", "javascript" => $javascript);
 
-        $app->render('pages/login.tpl', $data);
+            $app->render('pages/login.tpl', $data);
+
+        }
+        else{
+        $app->redirect('/');
+        }
+
     }
 }
 /**

@@ -24,8 +24,6 @@ class HomeController extends Controller
 //            'cipher' => MCRYPT_RIJNDAEL_256,
 //            'cipher_mode' => MCRYPT_MODE_CBC
 //        )));
-//        echo $_SESSION;
-
         $data = array("title" => "Home");
 
         $app->render('pages/home.tpl', $data);

@@ -2,7 +2,7 @@
 session_start();
     $_SESSION['name']='tony';
 
-//echo $_SESSION['ID'];
+echo $_SESSION['name'];
 /**
  * Created by PhpStorm.
  * User: daniel donevski
